@@ -1,0 +1,167 @@
+{
+  "file": "/Users/lulu/Codex/TongueObsProject/舌苔视频/IMG_3036_480.mov",
+  "attempts": [
+    {
+      "algorithm": "sha256",
+      "status": 200,
+      "phase": "query",
+      "ok": true,
+      "analysisId": "1774405335041000001",
+      "start_payload": {
+        "responseId": "18621380178_niqivqkkpu",
+        "success": true,
+        "errorCode": null,
+        "errorMsg": null,
+        "data": {
+          "analysisId": "1774405335041000001",
+          "tips": null
+        },
+        "description": null
+      },
+      "final_payload": {
+        "responseId": "18621380178_ccurqjfshb",
+        "success": true,
+        "errorCode": null,
+        "errorMsg": null,
+        "data": {
+          "id": "1774405335041000001",
+          "createTime": 1774405335000,
+          "updateTime": 1774405346839,
+          "deleteTime": 0,
+          "createTimeString": "2026-03-25 10:22:15",
+          "updateTimeString": "2026-03-25 10:22:26",
+          "faceAnalysisResponse": {
+            "healthAssessment": {
+              "subject": "痰湿质",
+              "score": 70,
+              "sex": "男",
+              "age": 25,
+              "subject1": "气虚质",
+              "score1": 65,
+              "subject2": "阳虚质",
+              "score2": 55,
+              "subject3": "阴虚质",
+              "score3": 45,
+              "subject4": "痰湿质",
+              "score4": 70,
+              "subject5": "湿热质",
+              "score5": 50,
+              "subject6": "血瘀质",
+              "score6": 60,
+              "subject7": "气郁质",
+              "score7": 55,
+              "subject8": "特禀质",
+              "score8": 40,
+              "subject9": "平和质",
+              "score9": 50,
+              "summary": "您舌体胖大，舌色淡红，舌有裂纹，提示体内湿气重，气阴两虚。建议饮食清淡，避免生冷油腻，适当运动以助气机运行。",
+              "riskWarnings": [
+                "您舌体胖大、舌有裂纹，提示体内湿气重，气阴两虚，易疲劳、乏力，建议加强营养，避免过度劳累，适当运动以助气机运行。",
+                "舌色淡红、舌有裂纹，提示体内津液不足，建议多饮水，避免辛辣刺激食物，适当食用滋阴润燥食物如银耳、百合。",
+                "长期湿气重、气阴两虚，易导致免疫力下降，建议坚持规律作息，适当运动，饮食清淡，避免熬夜，保持情绪舒畅。"
+              ]
+            },
+            "healthSuggestions": {
+              "diet": [
+                {
+                  "name": "百合银耳羹",
+                  "effect": "滋阴润燥，养肺润肠"
+                },
+                {
+                  "name": "山药粥",
+                  "effect": "健脾益气，补中益气"
+                }
+              ],
+              "exercise": "建议每日散步30分钟，可结合八段锦或太极拳，以调和气血，增强体质。",
+              "physicalTherapy": "可配合艾灸足三里、关元穴，以温补脾肾，改善气虚症状。"
+            },
+            "tongueAnalysis": {
+              "summary": "舌体胖大，舌色淡红，舌有裂纹，提示体内湿气重，气阴两虚，需注意饮食清淡，避免生冷油腻。",
+              "tongueColor": [
+                {
+                  "description": "舌色淡红，无明显异常，提示气血尚可，但舌体胖大、裂纹提示津液不足。",
+                  "manifestations": null
+                }
+              ],
+              "tongueShape": [
+                {
+                  "description": "舌体胖大，舌有裂纹，提示体内湿气重，津液不足，脾虚湿盛。",
+                  "manifestations": [
+                    "舌体胖大",
+                    "舌有裂纹"
+                  ]
+                }
+              ],
+              "coatingTexture": [
+                {
+                  "description": "舌苔薄白，无明显厚腻，提示无明显湿热或痰湿。",
+                  "manifestations": null
+                }
+              ],
+              "coatingColor": [
+                {
+                  "description": "舌苔薄白，无明显异常，提示无明显湿热或痰湿。",
+                  "manifestations": null
+                }
+              ]
+            },
+            "faceAnalysis": {
+              "summary": "面部未见明显异常，唇色正常，无明显潮红或青紫，提示气血尚可，但需注意舌象提示的湿气重与津液不足。",
+              "complexion": [
+                {
+                  "description": "额头无明显潮红或晦暗，提示无明显热象或阳亢。",
+                  "manifestations": null
+                }
+              ],
+              "nose": [
+                {
+                  "description": "鼻部无明显红赤或青紫，鼻翼无扇动，提示无明显热象或痰湿。",
+                  "manifestations": null
+                }
+              ],
+              "shape": [
+                {
+                  "description": "面颊无明显凹陷或浮肿，面色正常，提示无明显气血亏虚或湿热。",
+                  "manifestations": null
+                }
+              ],
+              "yinTang": [
+                {
+                  "description": "印堂无明显发红或发青，提示无明显肝火或肾虚。",
+                  "manifestations": null
+                }
+              ],
+              "lipColor": [
+                {
+                  "description": "口唇颜色正常，无明显淡白或青紫，提示气血尚可。",
+                  "manifestations": null
+                }
+              ],
+              "eyeState": [
+                {
+                  "description": "眼周无明显发黑或浮肿，目光正常，提示无明显肝肾不足或湿热。",
+                  "manifestations": null
+                }
+              ]
+            },
+            "healthAnalysis": {
+              "subjectName": "痰湿质",
+              "subjectFeature": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等痰湿表现为主要特征",
+              "subjectOutline": "面部皮肤油脂较多，多汗且黏，胸闷，痰多，口黏腻或甜，喜食肥甘甜黏，苔腻，脉滑",
+              "dietAccept": "饮食应以清淡为原则",
+              "dietReject": "少食肥肉及甜、黏、油腻的食物。可多食葱、蒜、海藻、海带、冬瓜、萝卜、金橘、芥末等食物",
+              "exerciseAccept": "长期坚持运动锻炼，如散步、慢跑、打乒乓球、羽毛球、网球、游泳、练武术，以及适合自己的各种舞蹈",
+              "exerciseReject": "",
+              "physicalPosition": "太溪、涌泉",
+              "physicalFigures": "health_report_fenglong.png,health_report_yinling.png",
+              "physicalSearch": "1、丰隆穴位于小腿前外侧,外踝尖上8寸,距胫骨前缘2横指\n2、阴陵泉位于小腿内侧,当胫骨内侧髁后下方凹陷处\n",
+              "physicalOperation": "用大拇指按揉三降、阴陵泉穴,两侧穴位可同时操作，以有酸胀感为度。每次按揉作5-10分钟。每日2次，10天1个疗程。如此可健脾化痰利湿\n"
+            }
+          }
+        },
+        "description": null
+      },
+      "poll_count": 4
+    }
+  ]
+}

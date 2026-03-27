@@ -1,0 +1,67 @@
+[
+  {
+    "poll": 1,
+    "status": 200,
+    "raw": "{\"responseId\":\"18621380178_qrwrqpnnwg\",\"success\":true,\"errorCode\":null,\"errorMsg\":null,\"data\":null,\"description\":null}",
+    "payload": {
+      "responseId": "18621380178_qrwrqpnnwg",
+      "success": true,
+      "errorCode": null,
+      "errorMsg": null,
+      "data": null,
+      "description": null
+    }
+  },
+  {
+    "poll": 2,
+    "status": 200,
+    "raw": "{\"responseId\":\"18621380178_ybdlxrluob\",\"success\":true,\"errorCode\":null,\"errorMsg\":null,\"data\":null,\"description\":null}",
+    "payload": {
+      "responseId": "18621380178_ybdlxrluob",
+      "success": true,
+      "errorCode": null,
+      "errorMsg": null,
+      "data": null,
+      "description": null
+    }
+  },
+  {
+    "poll": 3,
+    "status": 200,
+    "raw": "{\"responseId\":\"18621380178_nvguwofeaf\",\"success\":true,\"errorCode\":null,\"errorMsg\":null,\"data\":null,\"description\":null}",
+    "payload": {
+      "responseId": "18621380178_nvguwofeaf",
+      "success": true,
+      "errorCode": null,
+      "errorMsg": null,
+      "data": null,
+      "description": null
+    }
+  },
+  {
+    "poll": 4,
+    "status": 200,
+    "raw": "{\"responseId\":\"18621380178_mvfhjrbymm\",\"success\":true,\"errorCode\":null,\"errorMsg\":null,\"data\":null,\"description\":null}",
+    "payload": {
+      "responseId": "18621380178_mvfhjrbymm",
+      "success": true,
+      "errorCode": null,
+      "errorMsg": null,
+      "data": null,
+      "description": null
+    }
+  },
+  {
+    "poll": 5,
+    "status": 200,
+    "raw": "{\"responseId\":\"18621380178_pquavijngx\",\"success\":false,\"errorCode\":\"HEALTH_ANALYSIS_ERROR\",\"errorMsg\":\"舌面检测分析失败，请稍后再试！\",\"data\":null,\"description\":null}",
+    "payload": {
+      "responseId": "18621380178_pquavijngx",
+      "success": false,
+      "errorCode": "HEALTH_ANALYSIS_ERROR",
+      "errorMsg": "舌面检测分析失败，请稍后再试！",
+      "data": null,
+      "description": null
+    }
+  }
+]

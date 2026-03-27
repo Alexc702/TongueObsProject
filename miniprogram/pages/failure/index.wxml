@@ -1,0 +1,8 @@
+<view class="page" style="display:flex;align-items:center;">
+  <view class="status-box" style="width:100%;">
+    <view class="headline" style="color:#C75B4E;">本次检测未成功</view>
+    <view class="body muted" style="margin:24rpx 0 32rpx;">{{message}}</view>
+    <view class="button-primary button-block" bindtap="retry">重新检测</view>
+    <view class="button-secondary button-block" style="margin-top:16rpx;" bindtap="goHistory">查看历史报告</view>
+  </view>
+</view>

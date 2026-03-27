@@ -1,0 +1,51 @@
+<view class="page">
+  <view class="nav">
+    <view class="nav-title">前后对比</view>
+    <view class="nav-link" bindtap="goHistory">返回历史</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="status-box">
+    <view class="headline" style="font-size:44rpx;">正在生成对比结果</view>
+  </view>
+
+  <block wx:else>
+    <view class="hero-card">
+      <view class="grid-two">
+        <view class="metric-card">
+          <view class="caption">上一份</view>
+          <view class="section-title" style="font-size:30rpx;margin:8rpx 0 0;">{{compare.left.subject}}</view>
+          <view class="headline score" style="font-size:42rpx;">{{compare.left.score}}</view>
+        </view>
+        <view class="metric-card">
+          <view class="caption">当前</view>
+          <view class="section-title" style="font-size:30rpx;margin:8rpx 0 0;">{{compare.right.subject}}</view>
+          <view class="headline score" style="font-size:42rpx;">{{compare.right.score}}</view>
+        </view>
+      </view>
+      <view class="divider"></view>
+      <view class="body">综合评分变化：<text class="score">{{compare.overview.scoreDelta}}</text></view>
+      <view class="body muted" style="margin-top:10rpx;">
+        {{compare.overview.subjectChanged ? '主体质发生变化，请重点关注整体调理方向。' : '主体质保持一致，可持续观察波动趋势。'}}
+      </view>
+    </view>
+
+    <block wx:for="{{compare.sections}}" wx:key="key">
+      <view class="module-card">
+        <view class="section-title">{{item.title}}</view>
+        <block wx:for="{{item.rows}}" wx:key="key">
+          <view class="compare-row">
+            <view class="subtitle">{{item.label}}</view>
+            <view class="compare-card" style="margin-top:12rpx;">
+              <view class="caption">上一份</view>
+              <view class="body {{item.changed ? '' : 'muted'}}" style="margin-top:8rpx;">{{item.left}}</view>
+            </view>
+            <view class="compare-card">
+              <view class="caption">当前</view>
+              <view class="body {{item.changed ? '' : 'muted'}}" style="margin-top:8rpx;">{{item.right}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </block>
+  </block>
+</view>

@@ -1,0 +1,66 @@
+<view class="page">
+  <view class="nav">
+    <view class="nav-title">健康筛查</view>
+    <view class="nav-link" bindtap="goHistory">历史报告</view>
+  </view>
+
+  <view class="disclaimer">
+    <view class="disclaimer-badge">草</view>
+    <view>本产品非医疗器械，提供信息仅供参考</view>
+  </view>
+
+  <view class="hero-card">
+    <view class="headline">健康筛查视频录制</view>
+    <view class="body muted" style="margin-top:14rpx;">视频生成报告后自动删除不保留，建议光线充足并完整露出面部与舌头。</view>
+    <view class="camera-shell">
+      <view class="camera-frame">
+        <camera id="tongueCamera" device-position="front" flash="off" style="width:100%;height:100%;"></camera>
+        <view class="camera-guideline"></view>
+        <view class="camera-tip">{{recording ? '录制中 ' + elapsedSeconds + 's / 20s' : '请将嘴部与舌头置于圆框内'}}</view>
+      </view>
+    </view>
+    <view class="grid-two">
+      <view class="metric-card">
+        <view class="caption">拍摄条件</view>
+        <view class="section-title" style="font-size:28rpx;margin:8rpx 0 0;">光线充足</view>
+      </view>
+      <view class="metric-card">
+        <view class="caption">录制要求</view>
+        <view class="section-title" style="font-size:28rpx;margin:8rpx 0 0;">10-20 秒</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">拍摄说明</view>
+    <view class="body">1. 保持正面取景，面部与舌头都在画面中。</view>
+    <view class="body">2. 不遮挡口周，避免逆光和剧烈抖动。</view>
+    <view class="body">3. 相册选取的视频也需要满足 10 到 20 秒时长。</view>
+  </view>
+
+  <view class="action-row">
+    <view class="button-secondary" style="flex:1;" bindtap="chooseVideo">相册选取</view>
+    <view wx:if="{{!recording}}" class="button-primary" style="flex:1;" bindtap="startRecording">开始录制</view>
+    <view wx:else class="button-danger" style="flex:1;" bindtap="stopRecording">结束录制</view>
+  </view>
+
+  <view wx:if="{{privacyNeedAuthorization}}" class="privacy-mask">
+    <view class="privacy-dialog">
+      <view class="section-title" style="margin-bottom:12rpx;">使用前请先同意隐私指引</view>
+      <view class="body muted">
+        录制或上传舌面视频前，请先阅读并同意 {{privacyContractName}}。未同意前，无法调用相机、相册和报告存储能力。
+      </view>
+      <view class="privacy-contract-link" bindtap="openPrivacyGuide">查看 {{privacyContractName}}</view>
+      <view class="privacy-action-group">
+        <button class="privacy-button privacy-button-secondary" bindtap="openPrivacyGuide">查看指引</button>
+        <button
+          class="privacy-button privacy-button-primary"
+          open-type="agreePrivacyAuthorization"
+          bindagreeprivacyauthorization="handleAgreePrivacyAuthorization"
+        >
+          同意并继续
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

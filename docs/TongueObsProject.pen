@@ -1,0 +1,5881 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "UZiQ5",
+      "x": 900,
+      "y": 0,
+      "name": "Startup",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "bXSLa",
+          "name": "sStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "0VoDX",
+              "name": "sTime",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "OsDbW",
+              "name": "sIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "VlmyT",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "WuY37",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "bp1pK",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8ArN1",
+          "name": "sBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            18,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "LYlgA",
+              "name": "sBrand",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "8wUpG",
+                  "fill": "$accent-terracotta-soft",
+                  "width": 34,
+                  "height": 34
+                },
+                {
+                  "type": "text",
+                  "id": "fvhbZ",
+                  "fill": "$text-primary",
+                  "content": "舌观调理",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vgwEy",
+              "name": "sHero",
+              "width": "fill_container",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FFF9F1",
+                    "position": 0
+                  },
+                  {
+                    "color": "#F1EEE7",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                22,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oGb3q",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "正在准备一份更懂中医的健康筛查体验",
+                  "lineHeight": 1.08,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 28,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "qo7Qi",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "系统正在初始化检测服务、同步登录状态与历史报告。",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "EtMR3",
+                  "name": "shOrbWrap",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "lOqsF",
+                      "name": "shOrb",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "radial",
+                        "enabled": true,
+                        "rotation": 0,
+                        "size": {
+                          "width": 1,
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#F9EED9",
+                            "position": 0
+                          },
+                          {
+                            "color": "#EADCC4",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 160,
+                      "height": 160,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E0D5C6"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iLdVr",
+              "name": "sLoading",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mbLnH",
+                  "fill": "$text-primary",
+                  "content": "初始化中",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "8DPMM",
+                  "fill": "#EFE8DD",
+                  "width": "fill_container",
+                  "height": 10
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "pLTIM",
+                  "fill": "$accent-green",
+                  "width": 220,
+                  "height": 10
+                },
+                {
+                  "type": "text",
+                  "id": "6y6Ry",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "1. 建立微信登录\n2. 校验检测服务\n3. 准备历史记录",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "eHYdo",
+      "x": 1370,
+      "y": 0,
+      "name": "Capture",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0h72T",
+          "name": "cStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "zD0Br",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "hhj9K",
+              "name": "cIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "RNR4V",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "r8G7M",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "nYmak",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UejKl",
+          "name": "cBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 22,
+          "padding": [
+            12,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "TogB4",
+              "name": "cTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2QgP7",
+                  "fill": "$text-primary",
+                  "content": "舌面筛查",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "U96qx",
+                  "name": "chist",
+                  "fill": "$accent-terracotta-soft",
+                  "cornerRadius": 999,
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6JBVd",
+                      "fill": "$accent-terracotta",
+                      "content": "历史记录",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "osm3U",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "录制 20 秒舌面视频，系统会结合舌象、面容和体质，给出一份模块化报告。",
+              "lineHeight": 1.4,
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "JsFUK",
+              "name": "viewWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "C27f7",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "radial",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#F6EAD6",
+                        "position": 0
+                      },
+                      {
+                        "color": "#EFE3D0",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 238,
+                  "height": 238,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#DCCCB6"
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "aUXha",
+                  "fill": "$accent-green",
+                  "width": 168,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lNN2u",
+              "name": "helperRow",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZrH3h",
+                  "name": "h1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JRViu",
+                      "fill": "$text-primary",
+                      "content": "光线充足",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PdSFd",
+                      "fill": "$text-secondary",
+                      "content": "暖色自然光最佳",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ssUlD",
+                  "name": "h2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4PfTP",
+                      "fill": "$text-primary",
+                      "content": "跟随提示",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nzSNz",
+                      "fill": "$text-secondary",
+                      "content": "嘴部与舌头置于圆框中心",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rtpOq",
+              "name": "tipCard",
+              "width": "fill_container",
+              "fill": "$accent-gold-soft",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7H9bI",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "拍摄要点\n• 画面同时包含人脸和舌头\n• 避免过近、反光与剧烈晃动\n• 上传后原视频不长期保留",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YnNY7",
+              "name": "ctaRow",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eHFRI",
+                  "name": "album",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wpNh5",
+                      "fill": "$text-primary",
+                      "content": "相册选取",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e1lvu",
+                  "name": "record",
+                  "width": "fill_container",
+                  "fill": "$accent-green",
+                  "cornerRadius": 999,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PUJp8",
+                      "fill": "#FFFFFF",
+                      "content": "开始录制",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "z9aUX",
+      "x": 1840,
+      "y": 0,
+      "name": "Analyzing",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "O7wXU",
+          "name": "aStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "arzrb",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "gJ7cC",
+              "name": "aIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "bROt5",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "MHfJ5",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "4h6rT",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pCZDL",
+          "name": "aBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            28,
+            24,
+            36,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rre4E",
+              "fill": "$text-primary",
+              "content": "正在生成健康报告",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 28,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "byMSg",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "系统正在分析舌象、面容与体质信息，预计 5-10 秒完成。",
+              "lineHeight": 1.4,
+              "textAlign": "center",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "AWL19",
+              "name": "aOrbWrap",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "LK6lH",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "radial",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#F6EAD6",
+                        "position": 0
+                      },
+                      {
+                        "color": "#E9E1D0",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 204,
+                  "height": 204,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#DCCCB6"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1pPIK",
+              "name": "aSteps",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AqX1t",
+                  "fill": "$text-primary",
+                  "content": "检测流程",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Z7BXq",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "1. 上传检测视频\n2. 提取舌象与面容特征\n3. 生成模块化调理建议",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "G0PoF",
+              "fill": "$text-secondary",
+              "content": "请保持网络稳定，不建议切出小程序。",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "bJXaO",
+      "x": 2310,
+      "y": 0,
+      "name": "Report Overview",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "r4ZQa",
+          "name": "rStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "84GHA",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "FEBK0",
+              "name": "rIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "FN5yQ",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "QxiIJ",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "qv4Qd",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gCsUC",
+          "name": "rBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            12,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mug42",
+              "name": "rTopBrand",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TBjmE",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4FYUr",
+                      "name": "logoMark",
+                      "width": 34,
+                      "height": 34,
+                      "fill": "#F3E7D2",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D9C9AE"
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "Nv4oO",
+                          "x": 9,
+                          "y": 6,
+                          "fill": "#6E8B3D",
+                          "width": 15,
+                          "height": 21
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "RSY8T",
+                          "x": 13,
+                          "y": 10,
+                          "fill": "#FAF8F4",
+                          "width": 5,
+                          "height": 6
+                        },
+                        {
+                          "type": "line",
+                          "id": "Ohbt5",
+                          "x": 18,
+                          "y": 15,
+                          "width": 5,
+                          "height": 9,
+                          "stroke": {
+                            "thickness": 1.5,
+                            "cap": "round",
+                            "fill": "#8DA35D"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3rOUX",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gBVW5",
+                          "fill": "#2F2A24",
+                          "content": "舌观",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dydB4",
+                          "fill": "#8B7E70",
+                          "content": "Tongue Insight",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 10,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xPeFX",
+                  "fill": "#7A6F62",
+                  "content": "报告概览",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pFx0j",
+              "name": "rBanner",
+              "width": "fill_container",
+              "fill": "$accent-gold-soft",
+              "cornerRadius": 16,
+              "gap": 8,
+              "padding": [
+                10,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zyuAA",
+                  "fill": "#A66A2C",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "本产品非医疗器械，报告内容仅供调理参考。",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UVYRF",
+              "name": "rHero",
+              "width": "fill_container",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FFF9F1",
+                    "position": 0
+                  },
+                  {
+                    "color": "#F2EEE7",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                20,
+                18
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "st6oc",
+                  "name": "rHeroTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "unj4E",
+                      "name": "subjectPill",
+                      "fill": "$accent-green-soft",
+                      "cornerRadius": 999,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oywMh",
+                          "fill": "$accent-green",
+                          "content": "痰湿质",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "HuAdA",
+                      "fill": "$accent-terracotta",
+                      "content": "70 分",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 30,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "IPGKf",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "主体质偏向痰湿，建议饮食清淡、持续运动、配合理疗祛湿。",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "aj4qM",
+                  "name": "metaRow",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J9gdf",
+                      "fill": "$text-secondary",
+                      "content": "报告编号 1774405335041000001",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4yKzR",
+                      "fill": "$text-secondary",
+                      "content": "男 · 25 岁",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kBhnr",
+              "name": "actionRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uu7kP",
+                  "name": "historyBtn",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fslwf",
+                      "fill": "$text-primary",
+                      "content": "历史报告",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xknEq",
+                  "name": "compareBtn",
+                  "width": "fill_container",
+                  "fill": "$accent-terracotta-soft",
+                  "cornerRadius": 18,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dVc3u",
+                      "fill": "$accent-terracotta",
+                      "content": "与上一份对比",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H2jRQ",
+              "name": "tabRow",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XEY4F",
+                  "name": "t1",
+                  "width": "fill_container",
+                  "fill": "$accent-green",
+                  "cornerRadius": 999,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FSwtm",
+                      "fill": "#FFFFFF",
+                      "content": "总览",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QWM17",
+                  "name": "t2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ul8kA",
+                      "fill": "$text-secondary",
+                      "content": "面容",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ekuTr",
+                  "name": "t3",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ghUF4",
+                      "fill": "$text-secondary",
+                      "content": "舌象",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "643Ax",
+                  "name": "t4",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sMxUK",
+                      "fill": "$text-secondary",
+                      "content": "调理",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZNI2s",
+              "name": "summaryCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1zjb5",
+                  "fill": "$text-primary",
+                  "content": "总结",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "CiO2E",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "您舌体胖大、舌有裂纹，提示体内湿气重，气阴两虚。建议饮食清淡，避免生冷油腻，适当运动以助气机运行。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7r6sm",
+              "name": "riskCard",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cUeDY",
+                  "fill": "$text-primary",
+                  "content": "风险预警",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "hk70c",
+                  "fill": "$accent-warn",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "• 湿气重、气阴两虚，易疲劳乏力，建议规律作息。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8ZQqm",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "• 建议增加饮水与润燥饮食，减少辛辣刺激。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1sXLT",
+              "name": "constitutionCard",
+              "width": "fill_container",
+              "fill": "$accent-green-soft",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Cs3KR",
+                  "fill": "$accent-green",
+                  "content": "体质分析 · 痰湿质",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "GxjHO",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等痰湿表现为主要特征。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ahD2y",
+              "name": "download",
+              "width": "fill_container",
+              "fill": "$accent-green",
+              "cornerRadius": 999,
+              "padding": [
+                14,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cF89g",
+                  "fill": "#FFFFFF",
+                  "content": "下载报告",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FQgOH",
+      "x": 2780,
+      "y": 0,
+      "name": "History",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "XQb0L",
+          "name": "hStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pRdTp",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "1vsWV",
+              "name": "hIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "GXpqY",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "LBTYI",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "YJ5Xt",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eMLZM",
+          "name": "hBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            12,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "YN5KR",
+              "fill": "$text-primary",
+              "content": "历史报告",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "YfgdR",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "选择两份报告，查看前后体质与风险变化。",
+              "lineHeight": 1.4,
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "nj1fb",
+              "name": "filterRow",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qa7Fi",
+                  "name": "f1",
+                  "fill": "$accent-green-soft",
+                  "cornerRadius": 999,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EQScT",
+                      "fill": "$accent-green",
+                      "content": "最近 30 天",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pWaPV",
+                  "name": "f2",
+                  "fill": "$accent-terracotta-soft",
+                  "cornerRadius": 999,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s9NgT",
+                      "fill": "$accent-terracotta",
+                      "content": "按时间倒序",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jpyub",
+              "name": "card1",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ReAkR",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "2026.03.25 10:22\n痰湿质 · 综合评分 70",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "FbDpJ",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "面容异常 0 项 · 舌象异常 1 项\n报告编号 1774405335041000001",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "D1tZt",
+                  "name": "select1",
+                  "fill": "$accent-green",
+                  "cornerRadius": 999,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lcQdR",
+                      "fill": "#FFFFFF",
+                      "content": "已选择用于对比",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qT33n",
+              "name": "card2",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FxdNF",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "2026.03.09 17:03\n阴虚质 · 综合评分 66",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7j1iF",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "面容异常 1 项 · 舌象异常 2 项\n报告编号 230932572221264562",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mD9tT",
+                  "name": "select2",
+                  "fill": "$accent-terracotta-soft",
+                  "cornerRadius": 999,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "blpd1",
+                      "fill": "$accent-terracotta",
+                      "content": "点击选择对比",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xb2Oy",
+              "name": "compareCta",
+              "width": "fill_container",
+              "fill": "$accent-green",
+              "cornerRadius": 999,
+              "padding": [
+                14,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iJSJI",
+                  "fill": "#FFFFFF",
+                  "content": "开始对比",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RgbKB",
+      "x": 3250,
+      "y": 0,
+      "name": "Compare",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ay97F",
+          "name": "cpStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yMiDE",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "KQ2Ou",
+              "name": "cpIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "xQD98",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "RzYDf",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "3F74G",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GOgHQ",
+          "name": "cpBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            12,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tMiOu",
+              "fill": "$text-primary",
+              "content": "前后对比",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "iNe5d",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "左侧是 3 月 9 日，右侧是 3 月 25 日的新报告。",
+              "lineHeight": 1.4,
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "a4gws",
+              "name": "rangeCard",
+              "width": "fill_container",
+              "fill": "$accent-gold-soft",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8dufp",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "2026.03.09 17:03  →  2026.03.25 10:22\n阴虚质 66 分  →  痰湿质 70 分",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6wsug",
+              "name": "compTabs",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "deD1s",
+                  "name": "ct1",
+                  "width": "fill_container",
+                  "fill": "$accent-green",
+                  "cornerRadius": 999,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OgRgg",
+                      "fill": "#FFFFFF",
+                      "content": "总览变化",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KXPQN",
+                  "name": "ct2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hOPZC",
+                      "fill": "$text-secondary",
+                      "content": "舌象变化",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tkgg5",
+              "name": "metricRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kwJLa",
+                  "name": "metric1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0R5P2",
+                      "fill": "$accent-green",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "综合评分\n+4",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RN4HS",
+                  "name": "metric2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cSP4T",
+                      "fill": "$accent-green",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "舌象异常\n-1",
+                      "lineHeight": 1.3,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YUpWL",
+              "name": "metric3",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cdJ7z",
+                  "fill": "$text-primary",
+                  "content": "变化摘要",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "cbNkp",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "本次主体质从阴虚质转为痰湿质，说明湿气与运化问题更突出；但整体舌象异常项减少 1 项，说明近期状态有改善。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lgT8J",
+              "name": "viewBtn",
+              "width": "fill_container",
+              "fill": "$accent-green",
+              "cornerRadius": 999,
+              "padding": [
+                14,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sD6Gy",
+                  "fill": "#FFFFFF",
+                  "content": "查看完整模块对比",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "a7p6t",
+      "x": 3720,
+      "y": 0,
+      "name": "Failure",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "wo4AB",
+          "name": "fStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "X7sCw",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "wbuSw",
+              "name": "fIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "4ZMsa",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "5TGMR",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "tumJ7",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2m0xC",
+          "name": "fBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            24,
+            28,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "hxDN8",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FAE6E0",
+                    "position": 0
+                  },
+                  {
+                    "color": "#F1D7D2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 144,
+              "height": 144,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7C7C0"
+              }
+            },
+            {
+              "type": "text",
+              "id": "RDb4C",
+              "fill": "$text-primary",
+              "content": "本次检测未完成",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 28,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "cnO4A",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "请检查光线、距离与画面稳定性后重新录制。若多次失败，可从相册选择更清晰的视频。",
+              "lineHeight": 1.45,
+              "textAlign": "center",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "xbPcv",
+              "name": "reason",
+              "width": "fill_container",
+              "fill": "$accent-warn-soft",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l9QZa",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "可能原因\n• 视频晃动或光线不足\n• 人脸与舌头未同时入镜\n• 网络中断导致分析失败",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3Lfxw",
+              "name": "retry",
+              "width": "fill_container",
+              "fill": "$accent-green",
+              "cornerRadius": 999,
+              "padding": [
+                14,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZqFF4",
+                  "fill": "#FFFFFF",
+                  "content": "重新检测",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hQhiC",
+              "name": "back",
+              "width": "fill_container",
+              "fill": "$bg-card",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-soft"
+              },
+              "padding": [
+                14,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Gj3hv",
+                  "fill": "$text-primary",
+                  "content": "返回首页",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cbTbg",
+      "x": 4190,
+      "y": 0,
+      "name": "Recording",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "vfXrJ",
+          "name": "cStatus",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eJkJD",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "eZncv",
+              "name": "cIcons",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "w4jOC",
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "hkxxC",
+                  "opacity": 0.72,
+                  "fill": "$text-primary",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 6,
+                  "id": "pmiun",
+                  "width": 24,
+                  "height": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$text-primary"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dFdEY",
+          "name": "cBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 22,
+          "padding": [
+            12,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DNeMo",
+              "name": "cTopBrand",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "StRmM",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lhizO",
+                      "name": "logoMark",
+                      "width": 34,
+                      "height": 34,
+                      "fill": "#F3E7D2",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D9C9AE"
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "cgXJL",
+                          "x": 9,
+                          "y": 6,
+                          "fill": "#6E8B3D",
+                          "width": 15,
+                          "height": 21
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "qIUyN",
+                          "x": 13,
+                          "y": 10,
+                          "fill": "#FAF8F4",
+                          "width": 5,
+                          "height": 6
+                        },
+                        {
+                          "type": "line",
+                          "id": "hmlkz",
+                          "x": 18,
+                          "y": 15,
+                          "width": 5,
+                          "height": 9,
+                          "stroke": {
+                            "thickness": 1.5,
+                            "cap": "round",
+                            "fill": "#8DA35D"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BVFve",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xHwpm",
+                          "fill": "#2F2A24",
+                          "content": "舌观",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "veLXO",
+                          "fill": "#8B7E70",
+                          "content": "Tongue Insight",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 10,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "K4q6L",
+                  "fill": "#7A6F62",
+                  "content": "录制中",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "qydjb",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "请保持嘴部居中并缓慢转动舌面，录满 10 秒后可结束。",
+              "lineHeight": 1.4,
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "gUuEK",
+              "name": "viewWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "vsdMq",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "radial",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#F6EAD6",
+                        "position": 0
+                      },
+                      {
+                        "color": "#EFE3D0",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 238,
+                  "height": 238,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#DCCCB6"
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 999,
+                  "id": "lM6Mm",
+                  "fill": "$accent-warn",
+                  "width": 112,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3v1pm",
+              "name": "helperRow",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eNAHM",
+                  "name": "h1",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E3mSq",
+                      "fill": "$text-primary",
+                      "content": "已录制 00:12",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k9rGg",
+                      "fill": "$text-secondary",
+                      "content": "达到 00:10 后可提交",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yAOGL",
+                  "name": "h2",
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c44jI",
+                      "fill": "$text-primary",
+                      "content": "录制建议",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t4JC0",
+                      "fill": "$text-secondary",
+                      "content": "缓慢转动舌面，保持嘴部居中",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UPTuQ",
+              "name": "tipCard",
+              "width": "fill_container",
+              "fill": "$accent-gold-soft",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hcFat",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "录制提示\n• 请保持自然呼吸与稳定姿势\n• 达到 10 秒后按钮可结束录制\n• 最长录制 20 秒将自动停止",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8KlIy",
+              "name": "ctaRow",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2zoMC",
+                  "name": "album",
+                  "width": "fill_container",
+                  "fill": "$accent-gold-soft",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-soft"
+                  },
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1GEuA",
+                      "fill": "$text-primary",
+                      "content": "重新拍摄",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ns8vC",
+                  "name": "record",
+                  "width": "fill_container",
+                  "fill": "$accent-warn",
+                  "cornerRadius": 999,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fSMkj",
+                      "fill": "#FFFFFF",
+                      "content": "结束录制",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "deC0T",
+      "x": 4660,
+      "y": 0,
+      "name": "Report Detail Modules",
+      "width": 1221,
+      "height": 2100,
+      "fill": "#F3EBDD",
+      "gap": 32,
+      "children": [
+        {
+          "type": "frame",
+          "id": "8hH2E",
+          "name": "Face Detail",
+          "width": 375,
+          "fill": "#FAF8F4",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "mzss8",
+              "width": "fill_container",
+              "fill": "#FFF7EC",
+              "cornerRadius": 18,
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tOFuh",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#F3E3D8",
+                  "cornerRadius": 999,
+                  "padding": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QKPeP",
+                      "fill": "#C67A52",
+                      "content": "草",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "OkgtE",
+                  "fill": "#C67A52",
+                  "content": "本产品中医养生建议，仅供日常调养参考",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RSUV6",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "i8dgz",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8BTTZ",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "13q1A",
+                          "fill": "#6E8B3D",
+                          "content": "痰湿质",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "e66nF",
+                      "fill": "#7A6F62",
+                      "content": "男 · 25岁",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MPXSf",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L27zx",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Hq6Sq",
+                          "fill": "#7A6F62",
+                          "content": "主体征",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uIfKA",
+                          "fill": "#2F2A24",
+                          "content": "面诊整体平和",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YAaIx",
+                      "width": 1,
+                      "height": 52,
+                      "fill": "#E7DDCF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pPx2W",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H9ErC",
+                          "fill": "#6E8B3D",
+                          "content": "70 分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GSLF3",
+                          "fill": "#7A6F62",
+                          "content": "综合评分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0d1U8",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AsxqQ",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iIhoV",
+                          "fill": "#7A6F62",
+                          "content": "总览",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yDqf5",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5hFz1",
+                          "fill": "#6E8B3D",
+                          "content": "面容",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KGypK",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Q7OQw",
+                          "fill": "#7A6F62",
+                          "content": "舌象",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ObuWE",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n5xN1",
+                          "fill": "#7A6F62",
+                          "content": "调理",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7a9Ul",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BaAu2",
+                  "fill": "#F3EBDD",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T3kRS",
+                      "fill": "#2F2A24",
+                      "content": "面容详情",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7XN4l",
+                  "fill": "#EEF3E3",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JUEES",
+                      "fill": "#6E8B3D",
+                      "content": "0 项异常表征",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qwJV6",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "S8UZE",
+                  "fill": "#2F2A24",
+                  "content": "模块摘要",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "5ng7v",
+                  "fill": "#2F2A24",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "面部未见明显异常，唇色正常，无明显潮红或青紫，提示气血尚可，但需注意舌象提示的湿气重与津液不足。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UI3Ix",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FPyYe",
+                  "fill": "#2F2A24",
+                  "content": "面诊区位图",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "3XfXL",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EAu7D",
+                      "width": 148,
+                      "fill": "#F8EEDC",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DkoNW",
+                          "fill": "#7A6F62",
+                          "content": "面诊区位示意",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vMd6W",
+                          "fill": "#C67A52",
+                          "content": "额头\n鼻部\n面颊 · 印堂\n口唇 · 眼周",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W2xdv",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dQESj",
+                          "fill": "#EEF3E3",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TDeAm",
+                              "fill": "#6E8B3D",
+                              "content": "面色平和",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "7Lr2d",
+                          "fill": "#EEF3E3",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LSFYf",
+                              "fill": "#6E8B3D",
+                              "content": "唇色正常",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5xoMq",
+                          "fill": "#F6F1E8",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KAOK8",
+                              "fill": "#7A6F62",
+                              "content": "未见青紫",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YKz7q",
+                          "fill": "#F6F1E8",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FqLiS",
+                              "fill": "#7A6F62",
+                              "content": "目光正常",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Qhlna",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "crWw3",
+                  "fill": "#2F2A24",
+                  "content": "部位观察",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "gbdTt",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "viW3w",
+                      "fill": "#2F2A24",
+                      "content": "额头",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1dTPi",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "额头无明显潮红或晦暗，提示无明显热象或阳亢。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KYSGJ",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UVfAA",
+                      "fill": "#2F2A24",
+                      "content": "鼻部",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xxefx",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "鼻部无明显红赤或青紫，鼻翼无扇动，提示无明显热象或痰湿。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Lh1AZ",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "josTI",
+                      "fill": "#2F2A24",
+                      "content": "面颊",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J64Ae",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "面颊无明显凹陷或浮肿，面色正常，提示无明显气血亏虚或湿热。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "piivC",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tihZq",
+                      "fill": "#2F2A24",
+                      "content": "印堂",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L1Br5",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "印堂无明显发红或发青，提示无明显肝火或肾虚。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zaSNR",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CzppJ",
+                      "fill": "#2F2A24",
+                      "content": "口唇四周",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "U3BKp",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "口唇颜色正常，无明显淡白或青紫，提示气血尚可。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZaPd8",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zC4GL",
+                      "fill": "#2F2A24",
+                      "content": "眼周",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5qEVm",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "眼周无明显发黑或浮肿，目光正常，提示无明显肝肾不足或湿热。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C69pb",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iQQGr",
+                  "fill": "#2F2A24",
+                  "content": "综合解读",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "qa50w",
+                  "fill": "#2F2A24",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "面容端整体平和，未见明显热象、瘀象或肾虚外显体征；与舌象及体质结论合看，当前更需关注湿气重、津液不足与作息负荷。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qZug1",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "拍摄光线、角度及妆容会影响面容检测结果。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nidx6",
+          "name": "Tongue Detail",
+          "width": 375,
+          "fill": "#FAF8F4",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "WmrGQ",
+              "width": "fill_container",
+              "fill": "#FFF7EC",
+              "cornerRadius": 18,
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sr638",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#F3E3D8",
+                  "cornerRadius": 999,
+                  "padding": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Sdfbc",
+                      "fill": "#C67A52",
+                      "content": "草",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "GkuNP",
+                  "fill": "#C67A52",
+                  "content": "本产品中医养生建议，仅供日常调养参考",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dIrq3",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a8rVB",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yD2n3",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n0Hvk",
+                          "fill": "#6E8B3D",
+                          "content": "痰湿质",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "HOmM2",
+                      "fill": "#7A6F62",
+                      "content": "男 · 25岁",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SRRqi",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MJveP",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "y4dJS",
+                          "fill": "#7A6F62",
+                          "content": "主体征",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fGnO2",
+                          "fill": "#2F2A24",
+                          "content": "湿气重 · 津液不足",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ODb9h",
+                      "width": 1,
+                      "height": 52,
+                      "fill": "#E7DDCF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JQMkL",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z57ss",
+                          "fill": "#6E8B3D",
+                          "content": "70 分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n3fk2",
+                          "fill": "#7A6F62",
+                          "content": "综合评分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CclxX",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kCa2P",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qu7cd",
+                          "fill": "#7A6F62",
+                          "content": "总览",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Fsews",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pksTf",
+                          "fill": "#7A6F62",
+                          "content": "面容",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XBFa6",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Mkor4",
+                          "fill": "#6E8B3D",
+                          "content": "舌象",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CeQwB",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eD1or",
+                          "fill": "#7A6F62",
+                          "content": "调理",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "38Hte",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "40bgv",
+                  "fill": "#F3EBDD",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v4Cvr",
+                      "fill": "#2F2A24",
+                      "content": "舌象详情",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HIQ0d",
+                  "fill": "#F9E7E2",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HqOUj",
+                      "fill": "#C75B4E",
+                      "content": "2 项异常表征",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wSvDl",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UbQQe",
+                  "fill": "#2F2A24",
+                  "content": "模块摘要",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "0GQ3R",
+                  "fill": "#2F2A24",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "舌体胖大，舌色淡红，舌有裂纹，提示体内湿气重，气阴两虚，需注意饮食清淡，避免生冷油腻。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pEHrR",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "On6k4",
+                  "fill": "#2F2A24",
+                  "content": "舌象图示",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "83Kpl",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "n8wyK",
+                      "width": 148,
+                      "fill": "#F3E3D8",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yvzN4",
+                          "fill": "#7A6F62",
+                          "content": "舌体要点示意",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aZyhT",
+                          "fill": "#C67A52",
+                          "content": "淡红\n胖大\n裂纹\n薄白苔",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aO3qr",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ov5s2",
+                          "fill": "#F9E7E2",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QdFdr",
+                              "fill": "#C75B4E",
+                              "content": "舌体胖大",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ryqhI",
+                          "fill": "#F9E7E2",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "S8CrG",
+                              "fill": "#C75B4E",
+                              "content": "舌有裂纹",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oCXE6",
+                          "fill": "#F6F1E8",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "9e9hm",
+                              "fill": "#7A6F62",
+                              "content": "舌色淡红",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KdDN2",
+                          "fill": "#F6F1E8",
+                          "cornerRadius": 999,
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VlRgl",
+                              "fill": "#7A6F62",
+                              "content": "苔薄白",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8DCkI",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3zNDT",
+                  "fill": "#2F2A24",
+                  "content": "关键观察",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "WCWmf",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0xo9i",
+                      "fill": "#2F2A24",
+                      "content": "舌色",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d2c9w",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "舌色淡红，无明显异常，提示气血尚可，但舌体胖大、裂纹提示津液不足。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lnvZU",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MsdLI",
+                      "fill": "#C75B4E",
+                      "content": "舌形",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hSaiN",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "舌体胖大，舌有裂纹，提示体内湿气重，津液不足，脾虚湿盛。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I54Cj",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Kjz2u",
+                      "fill": "#2F2A24",
+                      "content": "苔质",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t6sxE",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "舌苔薄白，无明显厚腻，提示无明显湿热或痰湿。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5jSwZ",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JiXgH",
+                      "fill": "#2F2A24",
+                      "content": "苔色",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IMuzr",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "舌苔薄白，无明显异常，提示无明显湿热或痰湿。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qPklV",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "19jw7",
+                  "fill": "#2F2A24",
+                  "content": "异常线索",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "LAonY",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dAldI",
+                      "fill": "#F9E7E2",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d95Ga",
+                          "fill": "#C75B4E",
+                          "content": "舌体胖大",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jutYV",
+                      "fill": "#F9E7E2",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oX9qT",
+                          "fill": "#C75B4E",
+                          "content": "舌有裂纹",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ypRbv",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WonLr",
+                          "fill": "#6E8B3D",
+                          "content": "气阴两虚",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "aAUuX",
+                  "fill": "#2F2A24",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "舌象是本次报告的主要偏颇来源，重点提示湿气重、津液不足与脾虚湿盛。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JdDt5",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eMhKi",
+                  "fill": "#2F2A24",
+                  "content": "风险与调养重点",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "eBEfr",
+                  "fill": "#FFF7F4",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jkuBo",
+                      "fill": "#C75B4E",
+                      "content": "1",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cYOkl",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "您舌体胖大、舌有裂纹，提示体内湿气重，气阴两虚，易疲劳、乏力，建议加强营养，避免过度劳累，适当运动以助气机运行。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "brrxs",
+                  "fill": "#FFF7F4",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H2JRV",
+                      "fill": "#C75B4E",
+                      "content": "2",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EdmQK",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "舌色淡红、舌有裂纹，提示体内津液不足，建议多饮水，避免辛辣刺激食物，适当食用滋阴润燥食物如银耳、百合。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GBtAJ",
+                  "fill": "#FFF7F4",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6Rr02",
+                      "fill": "#C75B4E",
+                      "content": "3",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1Zy4v",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "长期湿气重、气阴两虚，易导致免疫力下降，建议坚持规律作息，适当运动，饮食清淡，避免熬夜，保持情绪舒畅。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "duKl3",
+          "name": "Therapy Detail",
+          "width": 375,
+          "fill": "#FAF8F4",
+          "cornerRadius": 28,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "4Ubn1",
+              "width": "fill_container",
+              "fill": "#FFF7EC",
+              "cornerRadius": 18,
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FCLC4",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#F3E3D8",
+                  "cornerRadius": 999,
+                  "padding": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fh54n",
+                      "fill": "#C67A52",
+                      "content": "草",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "IVZzQ",
+                  "fill": "#C67A52",
+                  "content": "本产品中医养生建议，仅供日常调养参考",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0eQ1F",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1RFNi",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "p3tNH",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qahUr",
+                          "fill": "#6E8B3D",
+                          "content": "痰湿质",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "idpgi",
+                      "fill": "#7A6F62",
+                      "content": "男 · 25岁",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qej9Y",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hlPKc",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UpTdD",
+                          "fill": "#7A6F62",
+                          "content": "主体征",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4HWfe",
+                          "fill": "#2F2A24",
+                          "content": "调理侧重健脾化湿",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Xql7Y",
+                      "width": 1,
+                      "height": 52,
+                      "fill": "#E7DDCF"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YnOSy",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GmdnB",
+                          "fill": "#6E8B3D",
+                          "content": "70 分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 28,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t0muS",
+                          "fill": "#7A6F62",
+                          "content": "综合评分",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2lUDH",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qa3Aa",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dxubY",
+                          "fill": "#7A6F62",
+                          "content": "总览",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zCVsb",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H33u4",
+                          "fill": "#7A6F62",
+                          "content": "面容",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hLXlg",
+                      "fill": "#F6F1E8",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bhJOq",
+                          "fill": "#7A6F62",
+                          "content": "舌象",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NyfIc",
+                      "fill": "#EEF3E3",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PmBGx",
+                          "fill": "#6E8B3D",
+                          "content": "调理",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DLo3d",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5CMsX",
+                  "fill": "#F3EBDD",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LNawa",
+                      "fill": "#2F2A24",
+                      "content": "调理详情",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dBVf2",
+                  "fill": "#EEF3E3",
+                  "cornerRadius": 999,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cs9mX",
+                      "fill": "#6E8B3D",
+                      "content": "饮食 · 运动 · 理疗",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QlpN8",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ggbzo",
+                  "fill": "#2F2A24",
+                  "content": "体质分析",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "uKONY",
+                  "fill": "#EEF3E3",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QMnmV",
+                      "fill": "#6E8B3D",
+                      "content": "主要体质 · 痰湿质",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n4vHS",
+                      "fill": "#2F2A24",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等痰湿表现为主要特征",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "JiDYW",
+                  "fill": "#2F2A24",
+                  "content": "常见表现",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "KMM8x",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "面部皮肤油脂较多，多汗且黏，胸闷，痰多，口黏腻或甜，喜食肥甘甜黏，苔腻，脉滑",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "2c9of",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MZwfx",
+                  "fill": "#2F2A24",
+                  "content": "体质倾向",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "OZU8n",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RnYc9",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "wqwjo",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TLuQ5",
+                              "fill": "#2F2A24",
+                              "content": "痰湿质",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "6JFNj",
+                              "fill": "#6E8B3D",
+                              "content": "70",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VP24n",
+                          "width": 220,
+                          "height": 8,
+                          "fill": "#F3EBDD",
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "93yTW",
+                              "width": 154,
+                              "height": 8,
+                              "fill": "#6E8B3D",
+                              "cornerRadius": 999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HOl2C",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QL8bU",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "B5ho8",
+                              "fill": "#2F2A24",
+                              "content": "气虚质",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "k4uOw",
+                              "fill": "#6E8B3D",
+                              "content": "65",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4nHfD",
+                          "width": 220,
+                          "height": 8,
+                          "fill": "#F3EBDD",
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "hxYoA",
+                              "width": 143,
+                              "height": 8,
+                              "fill": "#94A173",
+                              "cornerRadius": 999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BiOfL",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "0VhPj",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QZoC9",
+                              "fill": "#2F2A24",
+                              "content": "血瘀质",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Zfevb",
+                              "fill": "#6E8B3D",
+                              "content": "60",
+                              "fontFamily": "Microsoft YaHei",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hArHx",
+                          "width": 220,
+                          "height": 8,
+                          "fill": "#F3EBDD",
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rLaW5",
+                              "width": 132,
+                              "height": 8,
+                              "fill": "#C67A52",
+                              "cornerRadius": 999
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AQ5P9",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2arKK",
+                  "fill": "#2F2A24",
+                  "content": "食养建议",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "bFJ9Z",
+                  "fill": "#2F2A24",
+                  "content": "宜：饮食应以清淡为原则。",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "s3Ssf",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kLUpq",
+                      "fill": "#6E8B3D",
+                      "content": "推荐食疗",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K36pS",
+                      "fill": "#7A6F62",
+                      "content": "百合银耳羹 · 滋阴润燥，养肺润肠",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "q1eLI",
+                      "fill": "#7A6F62",
+                      "content": "山药粥 · 健脾益气，补中益气",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "qIug3",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "少食肥肉及甜、黏、油腻的食物。可多食葱、蒜、海藻、海带、冬瓜、萝卜、金橘、芥末等食物。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W2mTR",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5KQq3",
+                  "fill": "#2F2A24",
+                  "content": "运动建议",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "CRDWy",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "长期坚持运动锻炼，如散步、慢跑、打乒乓球、羽毛球、网球、游泳、练武术，以及适合自己的各种舞蹈。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "h47Yq",
+                  "width": "fit_content(0)",
+                  "height": 1,
+                  "fill": "#E7DDCF"
+                },
+                {
+                  "type": "text",
+                  "id": "oR2mI",
+                  "fill": "#2F2A24",
+                  "content": "建议每日散步30分钟，可结合八段锦或太极拳，以调和气血，增强体质。",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sGwze",
+                  "fill": "#7A6F62",
+                  "content": "调养重点：避免过度劳累，保持规律作息与情绪舒畅。",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xcsSd",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a964O",
+                  "fill": "#2F2A24",
+                  "content": "理疗建议",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "mU2Sb",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yBgYe",
+                      "fill": "#F3EBDD",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mCbsQ",
+                          "fill": "#C67A52",
+                          "content": "太溪",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bMu4A",
+                      "fill": "#F3EBDD",
+                      "cornerRadius": 999,
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tmAWu",
+                          "fill": "#C67A52",
+                          "content": "涌泉",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "0H7kR",
+                  "fill": "#2F2A24",
+                  "content": "可配合艾灸足三里、关元穴，以温补脾肾，改善气虚症状。",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mix8V",
+                  "fill": "#FFFDF8",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Gw8DC",
+                      "fill": "#2F2A24",
+                      "content": "辅助定位说明",
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rqV3a",
+                      "fill": "#7A6F62",
+                      "textGrowth": "fixed-width",
+                      "width": 319,
+                      "content": "1、丰隆穴位于小腿前外侧,外踝尖上8寸,距胫骨前缘2横指\n2、阴陵泉位于小腿内侧,当胫骨内侧髁后下方凹陷处",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Microsoft YaHei",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "9mdzB",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "按压方法：用大拇指按揉三降、阴陵泉穴,两侧穴位可同时操作，以有酸胀感为度。每次按揉5-10分钟，每日2次，10天1个疗程。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LNn8D",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AaAjL",
+                  "fill": "#2F2A24",
+                  "content": "报告信息",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "sJzkr",
+                  "fill": "#7A6F62",
+                  "content": "生成时间：2026-03-25 10:22:15",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "unjhe",
+                  "fill": "#7A6F62",
+                  "content": "报告编号：1774405335041000001",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "G3GQF",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": 343,
+                  "content": "当前详情页已对齐接口字段与截图中的模块结构，前端落地时可按服务端标准化文案展示。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "a3msM",
+      "x": 6004,
+      "y": 0,
+      "name": "Logo Options",
+      "width": 1320,
+      "fill": "#F6F1E8",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 40,
+      "children": [
+        {
+          "type": "frame",
+          "id": "JxoXq",
+          "name": "hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "3VDT3",
+              "fill": "#2F2A24",
+              "content": "Logo 方向提案",
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 30,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "79q1j",
+              "fill": "#7A6F62",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "这里给你 5 个独立可见的方向。都沿用现在的小程序气质：温和、可信、草本感、偏专业养护。",
+              "lineHeight": 1.55,
+              "fontFamily": "Microsoft YaHei",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wkc6r",
+          "name": "row1",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "LdsnZ",
+              "name": "Logo Option 1",
+              "width": "fill_container",
+              "height": 330,
+              "fill": "#FFFDFC",
+              "cornerRadius": 28,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7DDCF"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iYi6N",
+                  "fill": "#2F2A24",
+                  "content": "方案 1 · 极简图章",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "09dKw",
+                  "name": "stage1",
+                  "width": "fill_container",
+                  "height": 148,
+                  "fill": "#F8F2E7",
+                  "cornerRadius": 22,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OeV3z",
+                      "name": "mark1",
+                      "width": 140,
+                      "height": 72,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "Xhr60",
+                          "x": 8,
+                          "y": 10,
+                          "fill": "#EFE2C8",
+                          "width": 52,
+                          "height": 52
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "67EUa",
+                          "x": 25,
+                          "y": 16,
+                          "fill": "#6E8B3D",
+                          "width": 24,
+                          "height": 36
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "meCaH",
+                          "x": 33,
+                          "y": 24,
+                          "fill": "#F8F2E7",
+                          "width": 7,
+                          "height": 10
+                        },
+                        {
+                          "type": "text",
+                          "id": "mVgBR",
+                          "x": 74,
+                          "y": 16,
+                          "fill": "#2F2A24",
+                          "content": "舌观",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 22,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0dCGH",
+                          "x": 74,
+                          "y": 42,
+                          "fill": "#8B7E70",
+                          "content": "Tongue Insight",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "x6HDk",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "最稳妥的主标方向，适合启动页、小程序头像和报告页统一识别。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GKRSK",
+              "name": "Logo Option 2",
+              "width": "fill_container",
+              "height": 330,
+              "fill": "#FFFDFC",
+              "cornerRadius": 28,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7DDCF"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dth9a",
+                  "fill": "#2F2A24",
+                  "content": "方案 2 · 中草本徽章",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "5Gnxs",
+                  "name": "stage2",
+                  "width": "fill_container",
+                  "height": 148,
+                  "fill": "#F7F1E7",
+                  "cornerRadius": 22,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AvnDf",
+                      "name": "mark2",
+                      "width": 120,
+                      "height": 80,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "VOEzI",
+                          "x": 24,
+                          "y": 10,
+                          "fill": "#6E8B3D",
+                          "width": 34,
+                          "height": 48
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "eElsc",
+                          "x": 56,
+                          "y": 20,
+                          "fill": "#A58A5D",
+                          "width": 22,
+                          "height": 30
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "W6CPd",
+                          "x": 38,
+                          "y": 22,
+                          "fill": "#F7F1E7",
+                          "width": 10,
+                          "height": 12
+                        },
+                        {
+                          "type": "line",
+                          "id": "yETPo",
+                          "x": 18,
+                          "y": 62,
+                          "width": 58,
+                          "height": 0,
+                          "stroke": {
+                            "thickness": 2,
+                            "cap": "round",
+                            "fill": "#D8C6A7"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Y9110",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "草本与调理感更明显，适合强调东方养护和长期陪伴。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WOHs4",
+              "name": "Logo Option 3",
+              "width": "fill_container",
+              "height": 330,
+              "fill": "#FFFDFC",
+              "cornerRadius": 28,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7DDCF"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "W2mr5",
+                  "fill": "#2F2A24",
+                  "content": "方案 3 · 圆印章感",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "wSvyi",
+                  "name": "stage3",
+                  "width": "fill_container",
+                  "height": 148,
+                  "fill": "#FAF6EE",
+                  "cornerRadius": 22,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5V2Br",
+                      "name": "mark3",
+                      "width": 96,
+                      "height": 96,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "qZxzi",
+                          "x": 2,
+                          "y": 2,
+                          "fill": "#00000000",
+                          "width": 92,
+                          "height": 92,
+                          "stroke": {
+                            "thickness": 2,
+                            "fill": "#B89C6B"
+                          }
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "lG1gG",
+                          "x": 26,
+                          "y": 18,
+                          "fill": "#6E8B3D",
+                          "width": 44,
+                          "height": 60
+                        },
+                        {
+                          "type": "line",
+                          "id": "XDVuo",
+                          "x": 50,
+                          "y": 30,
+                          "width": 16,
+                          "height": 28,
+                          "stroke": {
+                            "thickness": 2,
+                            "cap": "round",
+                            "fill": "#F6F1E8"
+                          }
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "pRKBL",
+                          "x": 38,
+                          "y": 32,
+                          "fill": "#F6F1E8",
+                          "width": 10,
+                          "height": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "VvUgc",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "像温和的东方印记，稳定感最强，适合作为品牌主标。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0chJG",
+          "name": "row2",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Rbuh0",
+              "name": "Logo Option 4",
+              "width": "fill_container",
+              "height": 330,
+              "fill": "#FFFDFC",
+              "cornerRadius": 28,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7DDCF"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9L4vH",
+                  "fill": "#2F2A24",
+                  "content": "方案 4 · 字标优先",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "8NDPR",
+                  "name": "stage4",
+                  "width": "fill_container",
+                  "height": 148,
+                  "fill": "#F7F1E7",
+                  "cornerRadius": 22,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uqdNS",
+                      "name": "mark4",
+                      "width": 200,
+                      "height": 60,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "Rb5Z3",
+                          "x": 6,
+                          "y": 8,
+                          "fill": "#6E8B3D",
+                          "width": 22,
+                          "height": 34
+                        },
+                        {
+                          "type": "line",
+                          "id": "xZQU2",
+                          "x": 18,
+                          "y": 16,
+                          "width": 6,
+                          "height": 18,
+                          "stroke": {
+                            "thickness": 2,
+                            "cap": "round",
+                            "fill": "#F7F1E7"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "tEn8w",
+                          "x": 40,
+                          "y": 10,
+                          "fill": "#2F2A24",
+                          "content": "舌观 Tongue Insight",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yxmvo",
+                          "x": 42,
+                          "y": 36,
+                          "fill": "#9A8770",
+                          "content": "轻草本观察",
+                          "fontFamily": "Microsoft YaHei",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "OQk3g",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "更偏现代健康工具，传播最清晰，适合顶栏和报告页。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mZl4y",
+              "name": "Logo Option 5",
+              "width": "fill_container",
+              "height": 330,
+              "fill": "#FFFDFC",
+              "cornerRadius": 28,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E7DDCF"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i762e",
+                  "fill": "#2F2A24",
+                  "content": "方案 5 · 叶片舌形",
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "MtvSi",
+                  "name": "stage5",
+                  "width": "fill_container",
+                  "height": 148,
+                  "fill": "#F9F3E8",
+                  "cornerRadius": 22,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "smPuJ",
+                      "name": "mark5",
+                      "width": 120,
+                      "height": 90,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "jXDEC",
+                          "x": 32,
+                          "y": 10,
+                          "rotation": -8,
+                          "fill": "#6E8B3D",
+                          "width": 42,
+                          "height": 58
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "ppkv7",
+                          "x": 47,
+                          "y": 22,
+                          "fill": "#F9F3E8",
+                          "width": 14,
+                          "height": 18
+                        },
+                        {
+                          "type": "line",
+                          "id": "vZGNp",
+                          "x": 58,
+                          "y": 28,
+                          "width": 5,
+                          "height": 30,
+                          "stroke": {
+                            "thickness": 2,
+                            "cap": "round",
+                            "fill": "#A58A5D"
+                          }
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "DnIcE",
+                          "x": 22,
+                          "y": 26,
+                          "fill": "#D8C6A7",
+                          "width": 12,
+                          "height": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "tR20D",
+                  "fill": "#7A6F62",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "更自然、柔和，适合强调养护、记录和长期陪伴。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Microsoft YaHei",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-gold-soft": {
+      "type": "color",
+      "value": "#F8EEDC"
+    },
+    "accent-green": {
+      "type": "color",
+      "value": "#6E8B3D"
+    },
+    "accent-green-soft": {
+      "type": "color",
+      "value": "#EEF3E3"
+    },
+    "accent-terracotta": {
+      "type": "color",
+      "value": "#C67A52"
+    },
+    "accent-terracotta-soft": {
+      "type": "color",
+      "value": "#F3E3D8"
+    },
+    "accent-warn": {
+      "type": "color",
+      "value": "#C75B4E"
+    },
+    "accent-warn-soft": {
+      "type": "color",
+      "value": "#F9E7E2"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-page": {
+      "type": "color",
+      "value": "#FAF8F4"
+    },
+    "bg-surface": {
+      "type": "color",
+      "value": "#FFFDF8"
+    },
+    "border-soft": {
+      "type": "color",
+      "value": "#E7DDCF"
+    },
+    "radius-card": {
+      "type": "number",
+      "value": 18
+    },
+    "radius-pill": {
+      "type": "number",
+      "value": 26
+    },
+    "spacing-screen": {
+      "type": "number",
+      "value": 20
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#2F2A24"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#7A6F62"
+    }
+  }
+}

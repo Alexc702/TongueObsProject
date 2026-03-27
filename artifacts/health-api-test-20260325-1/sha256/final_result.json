@@ -1,0 +1,8 @@
+{
+  "responseId": "18621380178_pquavijngx",
+  "success": false,
+  "errorCode": "HEALTH_ANALYSIS_ERROR",
+  "errorMsg": "舌面检测分析失败，请稍后再试！",
+  "data": null,
+  "description": null
+}

@@ -1,0 +1,392 @@
+page {
+  background: #faf8f4;
+  color: #2f2a24;
+  font-family: "PingFang SC", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24rpx 24rpx calc(40rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at top right, rgba(198, 122, 82, 0.08), transparent 32%),
+    linear-gradient(180deg, #f6f1e7 0%, #faf8f4 46%, #faf8f4 100%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+  padding-top: 12rpx;
+}
+
+.nav-title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #6e8b3d;
+  font-size: 26rpx;
+}
+
+.hero-card,
+.card,
+.list-card,
+.module-card {
+  background: rgba(255, 253, 248, 0.96);
+  border: 1rpx solid #e7ddcf;
+  border-radius: 32rpx;
+  box-shadow: 0 16rpx 40rpx rgba(120, 95, 60, 0.08);
+}
+
+.hero-card,
+.card,
+.module-card {
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.card,
+.module-card,
+.list-card {
+  margin-bottom: 24rpx;
+}
+
+.hero-card {
+  margin-bottom: 20rpx;
+}
+
+.disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  padding: 18rpx 24rpx;
+  border-radius: 999rpx;
+  margin-bottom: 20rpx;
+  background: #f8eedc;
+  color: #a66a2c;
+  font-size: 24rpx;
+}
+
+.disclaimer-badge {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: rgba(166, 106, 44, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 16rpx;
+}
+
+.muted {
+  color: #7a6f62;
+}
+
+.score {
+  color: #6e8b3d;
+  font-weight: 700;
+}
+
+.pill-row,
+.tab-row,
+.action-row,
+.inline-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.pill {
+  padding: 10rpx 20rpx;
+  border-radius: 999rpx;
+  background: #f3ebdd;
+  color: #7a6f62;
+  font-size: 24rpx;
+}
+
+.pill-primary {
+  background: #eef3e3;
+  color: #6e8b3d;
+  font-weight: 700;
+}
+
+.pill-warn {
+  background: #f9e7e2;
+  color: #c75b4e;
+  font-weight: 700;
+}
+
+.button-primary,
+.button-secondary,
+.button-danger {
+  min-height: 88rpx;
+  padding: 0 30rpx;
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #8aae5a 0%, #6e8b3d 100%);
+  color: #fff;
+}
+
+.button-secondary {
+  background: #fffdf8;
+  color: #6e8b3d;
+  border: 1rpx solid #d8ccb8;
+}
+
+.button-danger {
+  background: #c75b4e;
+  color: #fff;
+}
+
+.button-block {
+  width: 100%;
+}
+
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 253, 248, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 16rpx 0;
+  border-radius: 999rpx;
+  font-size: 26rpx;
+  color: #7a6f62;
+}
+
+.tab-active {
+  background: #eef3e3;
+  color: #6e8b3d;
+  font-weight: 700;
+}
+
+.list-card {
+  padding: 24rpx;
+}
+
+.list-item {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e7ddcf;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #7a6f62;
+}
+
+.headline {
+  font-size: 44rpx;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.body {
+  font-size: 26rpx;
+  line-height: 1.7;
+}
+
+.caption {
+  font-size: 22rpx;
+  color: #7a6f62;
+}
+
+.divider {
+  height: 1rpx;
+  background: #e7ddcf;
+  margin: 20rpx 0;
+}
+
+.empty {
+  padding: 80rpx 24rpx;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 64rpx;
+  margin-bottom: 16rpx;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16rpx;
+}
+
+.metric-card {
+  background: #f6f1e8;
+  border-radius: 24rpx;
+  padding: 20rpx;
+}
+
+.bar-track {
+  width: 100%;
+  height: 12rpx;
+  border-radius: 999rpx;
+  overflow: hidden;
+  background: #f3ebdd;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, #94a173 0%, #6e8b3d 100%);
+}
+
+.compare-card {
+  background: #fffdf8;
+  border-radius: 24rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #e7ddcf;
+}
+
+.compare-row {
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #efe7da;
+}
+
+.compare-row:last-child {
+  border-bottom: none;
+}
+
+.status-box {
+  padding: 28rpx;
+  border-radius: 28rpx;
+  background: rgba(255, 253, 248, 0.92);
+  text-align: center;
+}
+
+.camera-shell {
+  margin: 24rpx 0 28rpx;
+  padding: 20rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 253, 248, 0.65);
+  border: 2rpx solid rgba(110, 139, 61, 0.22);
+}
+
+.camera-frame {
+  width: 100%;
+  height: 620rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: #e8dfcf;
+}
+
+.camera-guideline {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 50%;
+  height: 2rpx;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.camera-tip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 42rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+  text-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.35);
+}
+
+.hidden-canvas {
+  position: fixed;
+  left: -9999px;
+  top: -9999px;
+  width: 640rpx;
+  height: 1120rpx;
+}
+
+.privacy-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24rpx;
+  box-sizing: border-box;
+  background: rgba(37, 31, 24, 0.42);
+}
+
+.privacy-dialog {
+  width: 100%;
+  padding: 32rpx 28rpx calc(28rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  border-radius: 32rpx 32rpx 0 0;
+  background: #fffdf8;
+  box-shadow: 0 -18rpx 48rpx rgba(44, 34, 24, 0.16);
+}
+
+.privacy-contract-link {
+  margin-top: 18rpx;
+  color: #6e8b3d;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.privacy-action-group {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 28rpx;
+}
+
+.privacy-button {
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 0;
+  padding: 0;
+  border-radius: 999rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.privacy-button::after {
+  border: none;
+}
+
+.privacy-button-primary {
+  background: linear-gradient(135deg, #8aae5a 0%, #6e8b3d 100%);
+  color: #fff;
+}
+
+.privacy-button-secondary {
+  background: #fffdf8;
+  color: #6e8b3d;
+  border: 1rpx solid #d8ccb8;
+}

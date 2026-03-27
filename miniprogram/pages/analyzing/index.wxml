@@ -1,0 +1,14 @@
+<view class="page" style="display:flex;align-items:center;">
+  <view class="status-box" style="width:100%;">
+    <view class="headline">正在生成健康报告</view>
+    <view class="body muted" style="margin:20rpx 0 18rpx;">{{statusText}}</view>
+    <view class="bar-track" style="margin-bottom:22rpx;">
+      <view class="bar-fill" style="width:{{progress}}%;"></view>
+    </view>
+    <view class="pill-row" style="justify-content:center;margin-bottom:22rpx;">
+      <view class="pill pill-primary">预计 5-10 秒</view>
+      <view class="pill">{{analysisId}}</view>
+    </view>
+    <view class="button-secondary button-block" bindtap="cancelAndBack">取消并返回</view>
+  </view>
+</view>

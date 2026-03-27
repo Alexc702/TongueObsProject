@@ -1,0 +1,13 @@
+{
+  "host": "https://open.lifeemergence.com",
+  "algorithm": "sha256",
+  "file": "/Users/lulu/Codex/TongueObsProject/舌苔视频/IMG_3036_480.mov",
+  "file_size_bytes": 9348930,
+  "headers": {
+    "Content-Type": "multipart/form-data; boundary=----CodexBoundaryf3e0d20b6ca4499fba094cdaa8045f06",
+    "X-Access-Key": "***",
+    "X-Timestamp": "1774405330666",
+    "X-Nonce": "95556aed-b05e-4d1f-89d6-0b0932ae0c90",
+    "X-Signature": "***"
+  }
+}

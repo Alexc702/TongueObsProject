@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/launch/index",
+    "pages/capture/index",
+    "pages/history/index",
+    "pages/analyzing/index",
+    "pages/report/index",
+    "pages/compare/index",
+    "pages/failure/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#FAF8F4",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7A6F62",
+    "selectedColor": "#6E8B3D",
+    "backgroundColor": "#FFFDF8",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/capture/index",
+        "text": "检测"
+      },
+      {
+        "pagePath": "pages/history/index",
+        "text": "历史"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

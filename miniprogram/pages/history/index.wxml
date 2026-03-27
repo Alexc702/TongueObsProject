@@ -1,0 +1,47 @@
+<view class="page">
+  <view class="nav">
+    <view class="nav-title">历史报告</view>
+    <view class="nav-link" bindtap="goCapture">新检测</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="status-box">
+    <view class="headline" style="font-size:44rpx;">正在加载历史记录</view>
+  </view>
+
+  <block wx:else>
+    <view wx:if="{{reports.length === 0}}" class="empty card">
+      <view class="empty-icon">草</view>
+      <view class="section-title">暂无历史报告</view>
+      <view class="body muted" style="margin-top:12rpx;">完成一次检测后，结果会自动沉淀到这里。</view>
+      <view class="button-primary" style="margin-top:24rpx;" bindtap="goCapture">去检测</view>
+    </view>
+
+    <block wx:else>
+      <view class="card">
+        <view class="section-title">选择两份报告进行对比</view>
+        <view class="body muted">建议选择间隔时间较长的两次报告，观察体质和舌象变化。</view>
+      </view>
+      <view class="list-card">
+        <block wx:for="{{reports}}" wx:key="id">
+          <view class="list-item">
+            <view class="inline-row" style="justify-content:space-between;">
+              <view>
+                <view class="section-title" style="font-size:30rpx;margin-bottom:6rpx;">{{item.subject}}</view>
+                <view class="caption">{{item.generatedAt}}</view>
+              </view>
+              <view class="headline score" style="font-size:42rpx;">{{item.score}}</view>
+            </view>
+            <view class="body muted" style="margin-top:14rpx;">{{item.summary}}</view>
+            <view class="action-row" style="margin-top:16rpx;">
+              <view class="button-secondary" style="flex:1;" data-id="{{item.id}}" bindtap="viewReport">查看报告</view>
+              <view class="button-secondary" style="flex:1;" data-id="{{item.id}}" bindtap="toggleCompareSelect">
+                {{selectedIdsMap[item.id] ? '取消选择' : '加入对比'}}
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="button-primary button-block" bindtap="startCompare">对比所选报告</view>
+    </block>
+  </block>
+</view>

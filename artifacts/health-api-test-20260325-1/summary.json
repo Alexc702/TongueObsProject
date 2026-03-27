@@ -1,0 +1,32 @@
+{
+  "file": "/Users/lulu/Codex/TongueObsProject/舌苔视频/IMG_3037_480.mov",
+  "attempts": [
+    {
+      "algorithm": "sha256",
+      "status": 200,
+      "phase": "query",
+      "ok": true,
+      "analysisId": "1774405073887300002",
+      "start_payload": {
+        "responseId": "18621380178_hbwfoewkof",
+        "success": true,
+        "errorCode": null,
+        "errorMsg": null,
+        "data": {
+          "analysisId": "1774405073887300002",
+          "tips": null
+        },
+        "description": null
+      },
+      "final_payload": {
+        "responseId": "18621380178_pquavijngx",
+        "success": false,
+        "errorCode": "HEALTH_ANALYSIS_ERROR",
+        "errorMsg": "舌面检测分析失败，请稍后再试！",
+        "data": null,
+        "description": null
+      },
+      "poll_count": 5
+    }
+  ]
+}

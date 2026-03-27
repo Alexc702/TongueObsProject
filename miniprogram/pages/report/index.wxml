@@ -1,0 +1,167 @@
+<view class="page">
+  <view class="nav">
+    <view class="nav-title">检测报告</view>
+    <view class="nav-link" bindtap="goHistory">历史报告</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="status-box">
+    <view class="headline" style="font-size:44rpx;">正在加载报告</view>
+  </view>
+
+  <block wx:else>
+    <view class="disclaimer">
+      <view class="disclaimer-badge">草</view>
+      <view>{{report.disclaimer}}</view>
+    </view>
+
+    <view class="hero-card">
+      <view class="inline-row" style="justify-content:space-between;align-items:flex-start;">
+        <view>
+          <view class="pill pill-primary">{{report.subject.primary}}</view>
+          <view class="caption" style="margin-top:12rpx;">主体征</view>
+        </view>
+        <view style="text-align:right;">
+          <view class="headline score">{{report.subject.score}}分</view>
+          <view class="caption">综合评分</view>
+        </view>
+      </view>
+      <view class="divider"></view>
+      <view class="caption">报告时间 {{report.generatedAt}}</view>
+      <view class="caption" style="margin-top:8rpx;">报告编号 {{report.reportNo}}</view>
+      <view class="action-row" style="margin-top:20rpx;">
+        <view class="button-secondary" style="flex:1;" bindtap="goHistory">历史报告</view>
+        <view class="button-secondary {{previousReportId ? '' : 'muted'}}" style="flex:1;" bindtap="goCompareWithPrevious">
+          与上一份对比
+        </view>
+      </view>
+    </view>
+
+    <view class="tabs tab-row">
+      <view class="tab {{activeTab === 'overview' ? 'tab-active' : ''}}" data-tab="overview" bindtap="switchTab">总览</view>
+      <view class="tab {{activeTab === 'face' ? 'tab-active' : ''}}" data-tab="face" bindtap="switchTab">面容</view>
+      <view class="tab {{activeTab === 'tongue' ? 'tab-active' : ''}}" data-tab="tongue" bindtap="switchTab">舌象</view>
+      <view class="tab {{activeTab === 'therapy' ? 'tab-active' : ''}}" data-tab="therapy" bindtap="switchTab">调理</view>
+    </view>
+
+    <block wx:if="{{activeTab === 'overview'}}">
+      <view class="module-card">
+        <view class="section-title">总结</view>
+        <view class="body">{{report.overview.summary}}</view>
+      </view>
+      <view class="module-card">
+        <view class="section-title">风险预警</view>
+        <block wx:for="{{report.overview.riskWarnings}}" wx:key="index">
+          <view class="compare-card">
+            <view class="pill pill-warn" style="display:inline-flex;">风险 {{index + 1}}</view>
+            <view class="body muted" style="margin-top:12rpx;">{{item}}</view>
+          </view>
+        </block>
+      </view>
+      <view class="module-card">
+        <view class="section-title">体质分析</view>
+        <view class="pill pill-primary" style="display:inline-flex;">{{report.overview.constitution.name}}</view>
+        <view class="body" style="margin-top:14rpx;">{{report.overview.constitution.feature}}</view>
+        <view class="body muted" style="margin-top:10rpx;">{{report.overview.constitution.outline}}</view>
+      </view>
+    </block>
+
+    <block wx:if="{{activeTab === 'face'}}">
+      <view class="module-card">
+        <view class="inline-row" style="justify-content:space-between;">
+          <view class="section-title" style="margin-bottom:0;">面容检测</view>
+          <view class="pill {{report.face.abnormalCount ? 'pill-warn' : 'pill-primary'}}">{{report.face.abnormalCount}} 项异常表征</view>
+        </view>
+        <view class="body muted" style="margin-top:16rpx;">{{report.face.summary}}</view>
+      </view>
+      <block wx:for="{{report.face.items}}" wx:key="key">
+        <view class="module-card">
+          <view class="section-title" style="font-size:28rpx;margin-bottom:10rpx;">{{item.title}}</view>
+          <view class="body muted">{{item.description}}</view>
+        </view>
+      </block>
+    </block>
+
+    <block wx:if="{{activeTab === 'tongue'}}">
+      <view class="module-card">
+        <view class="inline-row" style="justify-content:space-between;">
+          <view class="section-title" style="margin-bottom:0;">舌象检测</view>
+          <view class="pill pill-warn">{{report.tongue.abnormalCount}} 项异常表征</view>
+        </view>
+        <view class="body muted" style="margin-top:16rpx;">{{report.tongue.summary}}</view>
+        <view class="pill-row" style="margin-top:18rpx;">
+          <view wx:for="{{report.tongue.manifestations}}" wx:key="index" class="pill pill-warn">{{item}}</view>
+        </view>
+      </view>
+      <block wx:for="{{report.tongue.items}}" wx:key="key">
+        <view class="module-card">
+          <view class="section-title" style="font-size:28rpx;margin-bottom:10rpx;">{{item.title}}</view>
+          <view class="body muted">{{item.description}}</view>
+        </view>
+      </block>
+    </block>
+
+    <block wx:if="{{activeTab === 'therapy'}}">
+      <view class="module-card">
+        <view class="section-title">体质倾向</view>
+        <block wx:for="{{report.subject.breakdown}}" wx:key="name">
+          <view style="margin-bottom:18rpx;">
+            <view class="inline-row" style="justify-content:space-between;margin-bottom:8rpx;">
+              <view>{{item.name}}</view>
+              <view class="score">{{item.score}}</view>
+            </view>
+            <view class="bar-track">
+              <view class="bar-fill" style="width:{{item.score}}%;"></view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="module-card">
+        <view class="section-title">食养建议</view>
+        <view class="body">宜：{{report.suggestions.diet.accept}}</view>
+        <view class="body muted" style="margin-top:10rpx;">忌：{{report.suggestions.diet.reject}}</view>
+        <view wx:if="{{report.suggestions.diet.recipes.length}}" class="divider"></view>
+        <block wx:for="{{report.suggestions.diet.recipes}}" wx:key="name">
+          <view class="compare-card">
+            <view class="section-title" style="font-size:28rpx;margin-bottom:8rpx;">{{item.name}}</view>
+            <view class="body muted">{{item.effect}}</view>
+          </view>
+        </block>
+      </view>
+      <view class="module-card">
+        <view class="section-title">运动建议</view>
+        <view class="body">{{report.suggestions.exercise.accept}}</view>
+        <view wx:if="{{report.suggestions.exercise.suggestion}}" class="body muted" style="margin-top:12rpx;">{{report.suggestions.exercise.suggestion}}</view>
+      </view>
+      <view class="module-card">
+        <view class="section-title">理疗建议</view>
+        <view class="pill pill-primary" style="display:inline-flex;">{{report.suggestions.therapy.positions}}</view>
+        <view class="body" style="margin-top:12rpx;">{{report.suggestions.therapy.suggestion}}</view>
+        <view class="body muted" style="margin-top:12rpx;white-space:pre-wrap;">{{report.suggestions.therapy.search}}</view>
+        <view class="body muted" style="margin-top:12rpx;white-space:pre-wrap;">{{report.suggestions.therapy.operation}}</view>
+      </view>
+    </block>
+
+    <view class="button-primary button-block" bindtap="savePoster">下载报告</view>
+    <canvas id="reportPosterCanvas" type="2d" class="hidden-canvas"></canvas>
+  </block>
+
+  <view wx:if="{{privacyNeedAuthorization}}" class="privacy-mask">
+    <view class="privacy-dialog">
+      <view class="section-title" style="margin-bottom:12rpx;">下载报告前请先完成授权</view>
+      <view class="body muted">
+        保存海报到系统相册前，请先阅读并同意 {{privacyContractName}}，以完成报告保存与历史记录使用说明确认。
+      </view>
+      <view class="privacy-contract-link" bindtap="openPrivacyGuide">查看 {{privacyContractName}}</view>
+      <view class="privacy-action-group">
+        <button class="privacy-button privacy-button-secondary" bindtap="openPrivacyGuide">查看指引</button>
+        <button
+          class="privacy-button privacy-button-primary"
+          open-type="agreePrivacyAuthorization"
+          bindagreeprivacyauthorization="handleAgreePrivacyAuthorization"
+        >
+          同意并继续
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

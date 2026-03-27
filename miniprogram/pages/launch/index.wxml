@@ -1,0 +1,31 @@
+<view class="page" style="display:flex;align-items:center;justify-content:center;">
+  <view class="status-box" style="width:100%;">
+    <view wx:if="{{privacyNeedAuthorization}}">
+      <view class="headline" style="font-size:48rpx;">开始前请先阅读并同意</view>
+      <view class="body muted" style="margin:24rpx 0 16rpx;">
+        为完成视频上传、检测报告生成、历史记录保存与报告下载，我们需要先取得你的隐私授权。
+      </view>
+      <view class="privacy-contract-link" bindtap="openPrivacyGuide">查看 {{privacyContractName}}</view>
+      <view class="privacy-action-group" style="margin-top:28rpx;">
+        <button class="privacy-button privacy-button-secondary" bindtap="openPrivacyGuide">查看指引</button>
+        <button
+          class="privacy-button privacy-button-primary"
+          open-type="agreePrivacyAuthorization"
+          bindagreeprivacyauthorization="handleAgreePrivacyAuthorization"
+        >
+          同意并继续
+        </button>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="headline" style="font-size:52rpx;">草本面舌检测</view>
+      <view class="body muted" style="margin:24rpx 0 32rpx;">
+        {{initializing ? '正在初始化检测服务与账号信息' : '准备进入检测流程'}}
+      </view>
+      <view class="pill-row" style="justify-content:center;">
+        <view class="pill pill-primary">静默登录</view>
+        <view class="pill">接口连通校验</view>
+      </view>
+    </view>
+  </view>
+</view>
