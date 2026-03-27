@@ -11,3 +11,11 @@ miniprogram/project.private.config.json
 
 # 测试/运行产物
 artifacts/
+# Obsidian
+.obsidian/
+
+# WeChat private config
+*.private.config.json
+
+# artifacts
+artifacts/
