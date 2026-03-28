@@ -1,3 +1,5 @@
 module.exports = {
-  apiBaseUrl: "https://tongue-obs-api-239061-10-1337905831.sh.run.tcloudbase.com"
+  cloudEnvId: "cloud1-0g2vpwot3593fa90",
+  containerService: "tongue-obs-api",
+  uploadPrefix: "tongue-videos"
 };

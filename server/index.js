@@ -8,6 +8,7 @@ const { createSessionToken, parseSessionToken } = require("./lib/session");
 const { startFaceAnalysis, queryFaceAnalysis } = require("./lib/health-api");
 const { mapReportPayload } = require("./lib/report-mapper");
 const { buildComparePayload } = require("./lib/compare");
+const { downloadTempUrlToFile } = require("./lib/cloud-file");
 const {
   initStore,
   upsertUserByOpenId,
@@ -58,6 +59,39 @@ function trimReportCard(report) {
     score: report.result.subject.score,
     summary: report.result.summary
   };
+}
+
+async function startAnalysisFromFile({
+  userId,
+  file,
+  durationSeconds,
+  sourceType,
+  cloudMeta = {}
+}) {
+  const upstreamPayload = await startFaceAnalysis(file);
+  if (!upstreamPayload.success || !upstreamPayload.data || !upstreamPayload.data.analysisId) {
+    const error = new Error(upstreamPayload.errorMsg || "启动检测失败");
+    error.statusCode = 502;
+    error.errorCode = upstreamPayload.errorCode || "UPSTREAM_START_FAILED";
+    error.upstreamPayload = upstreamPayload;
+    throw error;
+  }
+
+  const analysis = await createAnalysis({
+    userId,
+    upstreamAnalysisId: String(upstreamPayload.data.analysisId),
+    status: "processing",
+    sourceType: sourceType || "upload",
+    originalFileName: file.originalname,
+    videoMeta: {
+      size: file.size,
+      mimetype: file.mimetype,
+      durationSeconds,
+      ...cloudMeta
+    }
+  });
+
+  return analysis;
 }
 
 app.get("/api/health", (req, res) => {
@@ -114,28 +148,11 @@ app.post("/api/analysis/start", authMiddleware, upload.single("file"), async (re
       return;
     }
 
-    const upstreamPayload = await startFaceAnalysis(req.file);
-    if (!upstreamPayload.success || !upstreamPayload.data || !upstreamPayload.data.analysisId) {
-      res.status(502).json({
-        success: false,
-        errorCode: upstreamPayload.errorCode || "UPSTREAM_START_FAILED",
-        errorMsg: upstreamPayload.errorMsg || "启动检测失败",
-        upstreamPayload
-      });
-      return;
-    }
-
-    const analysis = await createAnalysis({
+    const analysis = await startAnalysisFromFile({
       userId: req.session.userId,
-      upstreamAnalysisId: String(upstreamPayload.data.analysisId),
-      status: "processing",
-      sourceType: req.body.sourceType || "upload",
-      originalFileName: req.file.originalname,
-      videoMeta: {
-        size: req.file.size,
-        mimetype: req.file.mimetype,
-        durationSeconds
-      }
+      file: req.file,
+      durationSeconds,
+      sourceType: req.body.sourceType || "upload"
     });
 
     res.json({
@@ -159,6 +176,15 @@ app.post("/api/analysis/start", authMiddleware, upload.single("file"), async (re
           }
         : null
     });
+    if (error.statusCode === 502) {
+      res.status(502).json({
+        success: false,
+        errorCode: error.errorCode,
+        errorMsg: error.message,
+        upstreamPayload: error.upstreamPayload
+      });
+      return;
+    }
     res.status(500).json({
       success: false,
       errorCode: "START_ANALYSIS_FAILED",
@@ -166,6 +192,89 @@ app.post("/api/analysis/start", authMiddleware, upload.single("file"), async (re
     });
   } finally {
     await removeTempFile(req.file && req.file.path);
+  }
+});
+
+app.post("/api/analysis/start-cloud", authMiddleware, async (req, res) => {
+  let tempFile = null;
+  try {
+    const {
+      fileId = "",
+      tempUrl = "",
+      durationSeconds = 0,
+      sourceType = "album",
+      originalFileName = "tongue-video.mov",
+      size = 0,
+      mimeType = "video/quicktime"
+    } = req.body || {};
+
+    if (!fileId || !tempUrl) {
+      res.status(400).json({
+        success: false,
+        errorCode: "MISSING_CLOUD_FILE",
+        errorMsg: "缺少云文件信息"
+      });
+      return;
+    }
+
+    const durationValue = Number(durationSeconds || 0);
+    if (durationValue && (durationValue <= 10 || durationValue > 20)) {
+      res.status(400).json({
+        success: false,
+        errorCode: "INVALID_DURATION",
+        errorMsg: "视频时长需大于10秒且不超过20秒"
+      });
+      return;
+    }
+
+    tempFile = await downloadTempUrlToFile({
+      tempUrl,
+      originalFileName,
+      mimeType,
+      size: Number(size || 0)
+    });
+
+    const analysis = await startAnalysisFromFile({
+      userId: req.session.userId,
+      file: tempFile,
+      durationSeconds: durationValue,
+      sourceType,
+      cloudMeta: {
+        fileId,
+        tempUrl
+      }
+    });
+
+    res.json({
+      success: true,
+      data: {
+        analysisId: analysis.id,
+        upstreamAnalysisId: analysis.upstreamAnalysisId,
+        status: analysis.status
+      }
+    });
+  } catch (error) {
+    console.error("start cloud analysis failed", {
+      message: error.message,
+      stack: error.stack,
+      body: req.body || null
+    });
+    if (error.statusCode === 502) {
+      res.status(502).json({
+        success: false,
+        errorCode: error.errorCode,
+        errorMsg: error.message,
+        upstreamPayload: error.upstreamPayload
+      });
+      return;
+    }
+    res.status(500).json({
+      success: false,
+      errorCode: "START_CLOUD_ANALYSIS_FAILED",
+      errorMsg: error.message
+    });
+  } finally {
+    await removeTempFile(tempFile && tempFile.path);
   }
 });
 

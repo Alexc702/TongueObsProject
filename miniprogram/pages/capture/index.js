@@ -144,13 +144,13 @@ Page({
         this.clearTimer();
         this.setData({ recording: false });
         try {
-          const info = await this.getVideoInfo(result.tempVideoPath);
-          await this.submitVideo({
+          const meta = await this.resolveVideoMeta({
             filePath: result.tempVideoPath,
-            durationSeconds: Math.round(info.duration || this.data.elapsedSeconds),
-            size: info.size || 0,
+            durationSeconds: this.data.elapsedSeconds,
+            size: 0,
             sourceType: "record"
           });
+          await this.submitVideo(meta);
         } catch (error) {
           wx.showToast({ title: error.message || "读取视频失败", icon: "none" });
         }
@@ -171,23 +171,17 @@ Page({
     if (!privacyAuthorized) {
       return;
     }
-    wx.chooseMedia({
-      count: 1,
-      mediaType: ["video"],
+    wx.chooseVideo({
       sourceType: ["album"],
       success: async (result) => {
-        const tempFile = result.tempFiles && result.tempFiles[0];
-        if (!tempFile) {
-          return;
-        }
         try {
-          const info = await this.getVideoInfo(tempFile.tempFilePath);
-          await this.submitVideo({
-            filePath: tempFile.tempFilePath,
-            durationSeconds: Math.round(info.duration || tempFile.duration || 0),
-            size: info.size || tempFile.size || 0,
+          const meta = await this.resolveVideoMeta({
+            filePath: result.tempFilePath,
+            durationSeconds: result.duration,
+            size: result.size,
             sourceType: "album"
           });
+          await this.submitVideo(meta);
         } catch (error) {
           wx.showToast({
             title: error.message || "无法读取视频",
@@ -217,12 +211,30 @@ Page({
     });
   },
 
-  validateVideo(meta) {
-    if (!meta.durationSeconds || meta.durationSeconds <= 10) {
-      throw new Error("视频时长需大于10秒");
+  async resolveVideoMeta({ filePath, durationSeconds = 0, size = 0, sourceType }) {
+    if (!filePath) {
+      throw new Error("未获取到视频文件");
     }
-    if (meta.durationSeconds > 20) {
-      throw new Error("视频时长不能超过20秒");
+
+    let info = null;
+    try {
+      info = await this.getVideoInfo(filePath);
+    } catch (error) {
+      // DevTools and some album selections may fail getVideoInfo even though the file is usable.
+      info = null;
+    }
+
+    return {
+      filePath,
+      durationSeconds: Math.round((info && info.duration) || durationSeconds || 0),
+      size: (info && info.size) || size || 0,
+      sourceType
+    };
+  },
+
+  validateVideo(meta) {
+    if (!meta.durationSeconds || meta.durationSeconds < 15 || meta.durationSeconds > 22) {
+      throw new Error("视频过短或过长，请重新上传一个录制好的20s左右视频，时长不短于15s。");
     }
     if (meta.size && meta.size > 15 * 1024 * 1024) {
       throw new Error("视频文件过大，请重新拍摄");

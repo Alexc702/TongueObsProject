@@ -1,14 +1,41 @@
-const { request, upload } = require("./request");
+const {
+  request,
+  uploadToCloudStorage,
+  getCloudTempUrl,
+  deleteCloudFile
+} = require("./request");
 
-function startAnalysis(payload) {
-  return upload({
-    url: "/analysis/start",
-    filePath: payload.filePath,
-    formData: {
-      durationSeconds: String(payload.durationSeconds || ""),
-      sourceType: payload.sourceType || "album"
+function getFileName(filePath) {
+  if (!filePath) {
+    return "";
+  }
+  const slashIndex = filePath.lastIndexOf("/");
+  return slashIndex >= 0 ? filePath.slice(slashIndex + 1) : filePath;
+}
+
+async function startAnalysis(payload) {
+  let fileId = "";
+  try {
+    fileId = await uploadToCloudStorage(payload.filePath);
+    const tempUrl = await getCloudTempUrl(fileId);
+    return await request({
+      url: "/analysis/start-cloud",
+      method: "POST",
+      data: {
+        fileId,
+        tempUrl,
+        durationSeconds: Number(payload.durationSeconds || 0),
+        sourceType: payload.sourceType || "album",
+        originalFileName: getFileName(payload.filePath),
+        size: Number(payload.size || 0),
+        mimeType: payload.mimeType || "video/quicktime"
+      }
+    });
+  } finally {
+    if (fileId) {
+      deleteCloudFile(fileId).catch(() => {});
     }
-  });
+  }
 }
 
 function queryAnalysis(analysisId) {

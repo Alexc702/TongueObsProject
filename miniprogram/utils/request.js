@@ -1,4 +1,4 @@
-const { apiBaseUrl } = require("../config");
+const { cloudEnvId, containerService, uploadPrefix } = require("../config");
 
 function getToken() {
   return wx.getStorageSync("tongueObsSessionToken") || "";
@@ -12,25 +12,28 @@ function normalizeResponse(res) {
   throw new Error((payload && payload.errorMsg) || "请求失败");
 }
 
+function buildHeaders({ auth = true, header = {} } = {}) {
+  const token = auth ? getToken() : "";
+  return {
+    "Content-Type": "application/json",
+    ...(token ? { Authorization: `Bearer ${token}`, "X-Session-Token": token } : {}),
+    "X-WX-SERVICE": containerService,
+    ...header
+  };
+}
+
 function request(options) {
-  const {
-    url,
-    method = "GET",
-    data = {},
-    header = {},
-    auth = true
-  } = options;
+  const { url, method = "GET", data = {}, header = {}, auth = true } = options;
 
   return new Promise((resolve, reject) => {
-    wx.request({
-      url: `${apiBaseUrl}${url}`,
+    wx.cloud.callContainer({
+      config: {
+        env: cloudEnvId
+      },
+      path: `/api${url}`,
       method,
       data,
-      header: {
-        "Content-Type": "application/json",
-        ...(auth && getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),
-        ...header
-      },
+      header: buildHeaders({ auth, header }),
       success(res) {
         try {
           resolve(normalizeResponse(res));
@@ -45,30 +48,60 @@ function request(options) {
   });
 }
 
-function upload(options) {
-  const { url, filePath, name = "file", formData = {} } = options;
+function makeCloudPath(filePath) {
+  const suffix = `${Date.now()}-${Math.random().toString(16).slice(2, 10)}`;
+  const dotIndex = filePath.lastIndexOf(".");
+  const extension = dotIndex >= 0 ? filePath.slice(dotIndex) : ".mov";
+  return `${uploadPrefix}/${suffix}${extension}`;
+}
+
+function uploadToCloudStorage(filePath) {
   return new Promise((resolve, reject) => {
-    wx.uploadFile({
-      url: `${apiBaseUrl}${url}`,
+    wx.cloud.uploadFile({
+      cloudPath: makeCloudPath(filePath),
       filePath,
-      name,
-      formData,
-      header: getToken() ? { Authorization: `Bearer ${getToken()}` } : {},
-      success(res) {
-        try {
-          resolve(normalizeResponse(res));
-        } catch (error) {
-          reject(error);
-        }
+      success(result) {
+        resolve(result.fileID);
       },
       fail(error) {
         reject(error);
       }
+    });
+  });
+}
+
+function getCloudTempUrl(fileId) {
+  return new Promise((resolve, reject) => {
+    wx.cloud.getTempFileURL({
+      fileList: [fileId],
+      success(result) {
+        const entry = result.fileList && result.fileList[0];
+        if (!entry || !entry.tempFileURL) {
+          reject(new Error("无法获取云文件临时链接"));
+          return;
+        }
+        resolve(entry.tempFileURL);
+      },
+      fail(error) {
+        reject(error);
+      }
+    });
+  });
+}
+
+function deleteCloudFile(fileId) {
+  return new Promise((resolve, reject) => {
+    wx.cloud.deleteFile({
+      fileList: [fileId],
+      success: resolve,
+      fail: reject
     });
   });
 }
 
 module.exports = {
   request,
-  upload
+  uploadToCloudStorage,
+  getCloudTempUrl,
+  deleteCloudFile
 };
